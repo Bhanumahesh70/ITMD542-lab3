@@ -1,0 +1,391 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* 
+
+Style for display all contacts
+
+*/
+/* styles.css */
+
+/* Style the container */
+.contacts-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center align content */
+}
+
+/* Style the heading */
+.contacts-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the "Create New Contact" button */
+.create-contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Add a gap between the button and the table */
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.create-contact-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style the table */
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+/* Style the table header */
+.contacts-table thead {
+  background-color: #f2f2f2;
+}
+
+/* Style the table header cells */
+.contacts-table th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the table data cells */
+.contacts-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top; /* Align table data vertically to the top */
+}
+
+/* Style the "View" link */
+.view-contact-link {
+  color: #1e90ff;
+  text-decoration: none;
+  color:#ddd;
+}
+
+.view-contact-link:hover {
+  text-decoration: underline;
+}
+
+/* 
+
+Styling delete contact details
+
+*/
+
+/* Style the contact details container */
+.contact-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style the headings */
+.contact-details h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the paragraphs */
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+/* Style the strong tags within paragraphs */
+.contact-details strong {
+  font-weight: bold;
+}
+
+/* Style the edit and delete buttons */
+.contact-details .edit-btn, .contact-details .delete-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-details .edit-btn:hover, .contact-details .delete-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style the view all contacts link */
+.contact-details .view-all-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/*
+
+css for edit contact details
+
+*/
+
+/* Style the form container */
+.edit-contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style the form labels */
+.edit-contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+.edit-contact-form input[type="text"],
+.edit-contact-form input[type="email"],
+.edit-contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the form submit buttons */
+.edit-contact-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px; /* Add margin between buttons */
+}
+
+.edit-contact-form button[type="submit"]:last-child {
+  margin: 10px; 
+}
+
+.edit-contact-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* 
+
+Styling for deleted contact error message
+
+*/
+
+/* Style the container */
+.deleted-contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the heading */
+.deleted-contact h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the paragraph */
+.deleted-contact p {
+  margin-bottom: 10px;
+}
+
+/* Style the strong tag within paragraph */
+.deleted-contact strong {
+  font-weight: bold;
+}
+
+/* Style the link */
+.deleted-contact a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.deleted-contact a:hover {
+  background-color: #0056b3;
+}
+
+/* 
+Styling create contact
+*/
+
+/* Style the form container */
+.create-contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style the form headings */
+.create-contact-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the form labels */
+.create-contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+.create-contact-form input[type="text"],
+.create-contact-form input[type="email"],
+.create-contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the form submit button */
+.create-contact-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.create-contact-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* 
+Styling introduction page
+*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* display contact styling
+ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.contact-details strong {
+  font-weight: bold;
+}
+
+.edit-btn,
+.delete-btn,
+.view-all-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  background-color: #333;
+  color: #fff;
+  color:#333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.view-all-link:hover {
+  background-color: #09090a;
+}
+
+
+

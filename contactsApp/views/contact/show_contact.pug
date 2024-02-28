@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  .contact-details
+    h1 Contact Details
+    p
+      strong First Name:
+      | #{contact.firstName}
+    p
+      strong Last Name:
+      | #{contact.lastName}
+    p
+      strong Email Address:
+      | #{contact.email}
+    p
+      strong Notes:
+      | #{contact.notes}
+    p
+      strong Date Created/Modified:
+      | #{contact.date}
+    a(href=`/contacts/${contact.id}/edit`, class='edit-btn') Edit Contact
+    button(type='button', class='delete-btn', onclick='deleteContact()', data-contact=JSON.stringify(contact)) Delete Contact
+    a(href=`/contacts`, class='view-all-link') View All Contacts
+
+    script.
+      function deleteContact() {
+        const contactData = JSON.parse(document.querySelector('.delete-btn').getAttribute('data-contact'));
+        console.log("Delete button clicked for contact:", contactData);
+        if (confirm("Are you sure you want to delete this contact?")) {
+          console.log("User confirmed deletion");
+          fetch(`/contacts/${contactData.id}`, {
+            method: 'DELETE'
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log("Contact deleted successfully");
+            console.log(data);
+            window.location.href = "/contacts";
+          })
+          .catch(error => {
+            console.error('There was a problem with your fetch operation:', error);
+          });
+        } else {
+          console.log("User cancelled deletion");
+        }
+      }
