@@ -11,13 +11,13 @@ block content
       | #{contact.lastName}
     p
       strong Email Address:
-      | #{contact.email}
+      | #{contact.emailAddress}
     p
       strong Notes:
       | #{contact.notes}
     p
       strong Date Created/Modified:
-      | #{contact.date}
+      | #{contact.createdAt}
     a(href=`/contacts/${contact.id}/edit`, class='edit-btn') Edit Contact
     button(type='button', class='delete-btn', onclick='deleteContact()', data-contact=JSON.stringify(contact)) Delete Contact
     a(href=`/contacts`, class='view-all-link') View All Contacts
