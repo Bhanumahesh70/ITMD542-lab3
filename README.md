@@ -10,6 +10,7 @@ The Contact Database App is made to assist users in effectively managing their c
 - **Operating System**: Windows 10
 - **Node.js Version**: 20.11.1
 - **Express.js Version**: 4.18.2
+- **sqlite3**: 5.1.7
 - **Editors**: Visual Studio Code
 
 ## Installation/Running Instructions
